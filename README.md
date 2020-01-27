@@ -16,7 +16,7 @@ Just include the library on your C projects
 | ------------------- | ------------------- |
 |  [ft_memset](wwww.github.com/sfcaio/libft)  |  fills  the  first  n  bytes of the memory area pointed to by s with the constant byte c. |
 |  [ft_bzero](wwww.github.com/sfcaio/libft) |  erases  the  data  in the n bytes of the memory starting at the location pointed to by s, by writing zeroes (bytes containing '\0') to that area. |
-|  [ft_memcpy](wwww.github.com/sfcaio/libft) |  copies  n bytes from memory area src to memory area dest.  The memory areas must not overlap. |
+|  [ft_memcpy](github.com/sfcaio/libft) |  copies  n bytes from memory area src to memory area dest.  The memory areas must not overlap. |
 |  [ft_memccpy](wwww.github.com/sfcaio/libft) |  copies no more than n bytes from memory area src to memory area dest, stopping when the character c is found. |
 |  [ft_memmove](wwww.github.com/sfcaio/libft) |  function  copies n bytes from memory area src to memory area dest.  The memory areas may overlap: copying takes place as though the bytes in src are first copied into a temporary array that does notoverlap src or dest, and the bytes are then copied from the temporary array to dest. |
 |  [ft_memchr](wwww.github.com/sfcaio/libft) |  scans  the  initial n bytes of the memory area pointed to by s for the first instance of c.  Both c and the  bytes  of the memory area pointed to by s are interpreted as unsigned char. |
@@ -69,3 +69,7 @@ Just include the library on your C projects
 * [Vim](https://www.vim.org/) - Text editor
 * [GNU Compiler Collection](https://gcc.gnu.org/) - Gcc to compile
 * [Libftest](https://github.com/jtoty/Libftest) - Script test to check functions automatically
+
+## Author
+
+* **[Caio Vinicius](https://github.com.br/sfcaio)**
