@@ -6,15 +6,15 @@
 /*   By: csouza-f <csouza-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 12:51:34 by csouza-f          #+#    #+#             */
-/*   Updated: 2020/02/03 18:04:27 by csouza-f         ###   ########.fr       */
+/*   Updated: 2020/06/10 23:55:35 by caio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dest, const char *src, unsigned long int dstsize)
+size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize)
 {
-	unsigned long int i;
+	size_t i;
 
 	i = 0;
 	if (!dest || !src)

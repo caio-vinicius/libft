@@ -6,16 +6,16 @@
 /*   By: csouza-f <csouza-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 13:28:21 by csouza-f          #+#    #+#             */
-/*   Updated: 2020/02/03 19:00:10 by csouza-f         ###   ########.fr       */
+/*   Updated: 2020/06/10 23:56:24 by caio             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_substr(char const *s, unsigned int start, unsigned long int len)
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	unsigned long int	i;
-	char				*str;
+	size_t	i;
+	char	*str;
 
 	i = 0;
 	if (!s || !(str = malloc(len + 1)))
