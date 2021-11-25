@@ -6,7 +6,7 @@
 /*   By: csouza-f <csouza-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/27 16:53:03 by csouza-f          #+#    #+#             */
-/*   Updated: 2021/11/24 21:51:24 by caio-proj        ###   ########.fr       */
+/*   Updated: 2021/11/24 22:03:10 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!s)
 		return (0);
 	str = malloc(ft_strlen(s) + 1);
-		if (!str)
+	if (!str)
 		return (0);
 	while (s[i])
 	{

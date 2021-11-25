@@ -6,7 +6,7 @@
 /*   By: csouza-f <csouza-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 16:05:29 by csouza-f          #+#    #+#             */
-/*   Updated: 2021/11/24 21:49:41 by caio-proj        ###   ########.fr       */
+/*   Updated: 2021/11/24 22:02:51 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	if (!s1 || !s2)
 		return (NULL);
 	str = malloc(ft_strlen(s1) + ft_strlen(s2) + 1);
-		if (!str)
+	if (!str)
 		return (NULL);
 	while (s1[i])
 	{
