@@ -6,7 +6,7 @@
 /*   By: csouza-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/01 16:18:17 by csouza-f          #+#    #+#             */
-/*   Updated: 2020/02/03 17:28:06 by csouza-f         ###   ########.fr       */
+/*   Updated: 2021/11/24 21:09:19 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	resp_atoi(const char *str, int signal)
 {
-	int i;
-	int resp;
+	int	i;
+	int	resp;
 
 	i = 0;
 	resp = 0;
@@ -30,7 +30,7 @@ int	resp_atoi(const char *str, int signal)
 int	ft_atoi(const char *str)
 {
 	int	i;
-	int signal;
+	int	signal;
 
 	i = 0;
 	signal = 1;

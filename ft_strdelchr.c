@@ -6,12 +6,11 @@
 /*   By: caio <csouza-f@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/09 11:48:25 by caio              #+#    #+#             */
-/*   Updated: 2020/06/10 23:50:25 by caio             ###   ########.fr       */
+/*   Updated: 2021/11/24 21:36:19 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strdelchr(const char *str, char c)
 {
@@ -22,8 +21,9 @@ char	*ft_strdelchr(const char *str, char c)
 
 	i = 0;
 	j = 0;
-	s = (char*)str;
-	if (!(newstr = malloc(ft_strlen(s) - ft_strcountchr(s, c) + 1)))
+	s = (char *)str;
+	newstr = malloc(ft_strlen(s) - ft_strcountchr(s, c) + 1)
+		if (!newstr)
 		return (NULL);
 	while (s[i])
 	{

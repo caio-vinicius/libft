@@ -6,7 +6,7 @@
 /*   By: caio <csouza-f@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/09 11:59:37 by caio              #+#    #+#             */
-/*   Updated: 2020/06/09 12:01:37 by caio             ###   ########.fr       */
+/*   Updated: 2021/11/24 21:11:22 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_strcountchr(const char *str, char c)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 0;

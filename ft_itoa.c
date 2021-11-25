@@ -6,7 +6,7 @@
 /*   By: csouza-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/31 16:24:18 by csouza-f          #+#    #+#             */
-/*   Updated: 2020/02/03 16:15:47 by csouza-f         ###   ########.fr       */
+/*   Updated: 2021/11/24 21:27:40 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,10 @@ char	*make_itoa(int n, int count, char *str)
 
 	str[count] = 0;
 	count--;
-	num = (n > 0) ? n : -n;
+	if (n > 0)
+		num = n;
+	else
+		num = -n;
 	while (num)
 	{
 		str[count] = (num % 10) + '0';
@@ -32,26 +35,29 @@ char	*make_itoa(int n, int count, char *str)
 
 char	*ft_itoa(int n)
 {
-	int				count;
 	unsigned int	num;
+	int				count;
 	char			*str;
 
-	count = (n > 0) ? 0 : 1;
-	num = (n > 0) ? n : -n;
+	if (n > 0)
+		count = 0;
+		num = n;
+	else
+		count = 1;
+		num = -n;
 	if (n == 0)
 	{
-		if (!(str = malloc(count + 1)))
+		str = malloc(count + 1)
+			if (!str)
 			return (NULL);
 		str[0] = '0';
 		str[1] = 0;
 		return (str);
 	}
-	while (num)
-	{
-		count++;
+	while (num && count++)
 		num /= 10;
-	}
-	if (!(str = malloc(count + 1)))
+	str = malloc(count + 1)
+		if (!str)
 		return (NULL);
 	return (make_itoa(n, count, str));
 }

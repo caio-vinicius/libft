@@ -6,7 +6,7 @@
 /*   By: csouza-f <csouza-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 18:35:04 by csouza-f          #+#    #+#             */
-/*   Updated: 2020/02/03 19:01:41 by csouza-f         ###   ########.fr       */
+/*   Updated: 2021/11/24 20:50:12 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,16 +56,27 @@ static char	*makeword(char const *s, char c)
 	return (word);
 }
 
-char		**ft_split(char const *s, char c)
+static char	**malloc_split(char const *s, char c)
 {
 	char	**split;
-	int		word;
-	int		count;
-	int		i;
 
-	if (!s || !(split = (char **)malloc((cwords(s, c) + 1) * sizeof(char *))))
+	if (!s)
 		return (NULL);
-	word = 0;
+	split = (char **)malloc((cwords(s, c) + 1) * sizeof(char *));
+	if (!split)
+		return (NULL);
+}
+
+char	**ft_split(char const *s, char c)
+{
+	static int	word;
+	char		**split;
+	int			count;
+	int			i;
+
+	split = malloc_split(s, c);
+	if (!split)
+		return (NULL);
 	count = 0;
 	i = 0;
 	while (s[i])
@@ -75,12 +86,12 @@ char		**ft_split(char const *s, char c)
 		else if (s[i] != c && word == 0)
 		{
 			word = 1;
-			if (!(split[count] = makeword(&s[i], c)))
+			split[count] = makeword(&s[i], c);
+			if (!split)
 				return (NULL);
 			count++;
 		}
 		i++;
 	}
-	split[count] = 0;
 	return (split);
 }

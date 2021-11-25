@@ -6,7 +6,7 @@
 /*   By: csouza-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 12:32:19 by csouza-f          #+#    #+#             */
-/*   Updated: 2020/01/31 17:09:49 by csouza-f         ###   ########.fr       */
+/*   Updated: 2021/11/24 21:38:19 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memset(void *s, int c, unsigned long int n)
 	unsigned long int	i;
 
 	i = 0;
-	str = (unsigned char*)s;
+	str = (unsigned char *)s;
 	while (i < n)
 	{
 		str[i] = (unsigned char)c;

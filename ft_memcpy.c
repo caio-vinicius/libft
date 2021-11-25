@@ -6,7 +6,7 @@
 /*   By: csouza-f <csouza-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 15:32:49 by csouza-f          #+#    #+#             */
-/*   Updated: 2020/02/03 18:38:48 by csouza-f         ###   ########.fr       */
+/*   Updated: 2021/11/24 21:38:32 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@ void	*ft_memcpy(void *dst, const void *src, unsigned long int n)
 	unsigned char		*dst1;
 	unsigned long int	i;
 
-	src1 = (unsigned char*)src;
-	dst1 = (unsigned char*)dst;
+	src1 = (unsigned char *)src;
+	dst1 = (unsigned char *)dst;
 	i = 0;
 	if (!dst && !src)
 		return (0);

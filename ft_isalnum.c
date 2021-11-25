@@ -6,7 +6,7 @@
 /*   By: csouza-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/24 17:35:40 by csouza-f          #+#    #+#             */
-/*   Updated: 2020/01/24 17:38:40 by csouza-f         ###   ########.fr       */
+/*   Updated: 2021/11/24 21:08:35 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 int	ft_isalnum(int c)
 {
-	return ((ft_isdigit(c) || ft_isalpha(c) ? 1 : 0));
+	if (ft_isdigit(c) || ft_isalpha(c))
+		return (1);
+	return (0);
 }

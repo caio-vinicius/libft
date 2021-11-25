@@ -6,7 +6,7 @@
 /*   By: csouza-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 16:22:48 by csouza-f          #+#    #+#             */
-/*   Updated: 2020/01/30 18:11:04 by csouza-f         ###   ########.fr       */
+/*   Updated: 2021/11/24 21:08:56 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	t_list *temp;
+	t_list	*temp;
 
 	temp = ft_lstlast(*lst);
 	if (temp != 0)

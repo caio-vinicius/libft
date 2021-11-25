@@ -6,7 +6,7 @@
 /*   By: csouza-f <csouza-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 16:58:16 by csouza-f          #+#    #+#             */
-/*   Updated: 2020/02/03 18:40:06 by csouza-f         ###   ########.fr       */
+/*   Updated: 2021/11/24 21:34:24 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ void	*ft_memmove(void *dst, const void *src, unsigned long int len)
 	unsigned char		*src1;
 	unsigned long int	i;
 
-	dst1 = (unsigned char*)dst;
-	src1 = (unsigned char*)src;
+	dst1 = (unsigned char *)dst;
+	src1 = (unsigned char *)src;
 	i = 0;
 	if (dst == src)
 		return (dst);

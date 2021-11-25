@@ -6,7 +6,7 @@
 /*   By: caio <csouza-f@student.42sp.org.br>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/08 17:25:33 by caio              #+#    #+#             */
-/*   Updated: 2020/06/08 17:27:02 by caio             ###   ########.fr       */
+/*   Updated: 2021/11/24 21:34:10 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_digitlen(const char *s)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (ft_isdigit(s[i]))

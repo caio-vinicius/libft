@@ -6,13 +6,13 @@
 /*   By: csouza-f <csouza-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 12:47:23 by csouza-f          #+#    #+#             */
-/*   Updated: 2020/02/03 18:51:24 by csouza-f         ###   ########.fr       */
+/*   Updated: 2021/11/24 21:12:00 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long int	ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
-	int i;
+	size_t	i;
 
 	i = 0;
 	while (s[i])

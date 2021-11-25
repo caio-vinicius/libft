@@ -6,7 +6,7 @@
 /*   By: csouza-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/27 16:36:06 by csouza-f          #+#    #+#             */
-/*   Updated: 2020/01/27 17:06:16 by csouza-f         ###   ########.fr       */
+/*   Updated: 2021/11/24 21:05:13 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	unsigned nbr;
+	unsigned int	nbr;
 
 	if (n < 0)
 	{

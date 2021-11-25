@@ -6,7 +6,7 @@
 /*   By: csouza-f <csouza-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 17:41:01 by csouza-f          #+#    #+#             */
-/*   Updated: 2020/02/03 18:57:16 by csouza-f         ###   ########.fr       */
+/*   Updated: 2021/11/24 21:36:38 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strrchr(const char *s, int c)
 
 	i = 0;
 	j = 0;
-	str = (char*)s;
+	str = (char *)s;
 	while (str[i] != '\0')
 	{
 		if (str[i] == (char)c)
