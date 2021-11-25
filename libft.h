@@ -6,7 +6,7 @@
 /*   By: csouza-f <csouza-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 11:36:04 by csouza-f          #+#    #+#             */
-/*   Updated: 2021/11/24 21:38:05 by caio-proj        ###   ########.fr       */
+/*   Updated: 2021/11/24 21:48:41 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stdlib.h>
 # include <unistd.h>
+# include <stddef.h>
 
 typedef struct s_list
 {

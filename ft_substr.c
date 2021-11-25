@@ -6,7 +6,7 @@
 /*   By: csouza-f <csouza-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/25 13:28:21 by csouza-f          #+#    #+#             */
-/*   Updated: 2021/11/24 21:37:24 by caio-proj        ###   ########.fr       */
+/*   Updated: 2021/11/24 21:49:27 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*str;
 
 	i = 0;
-	str = malloc(len + 1)
+	str = malloc(len + 1);
 		if (!s || !str)
 		return (NULL);
 	if (ft_strlen(s) < start)

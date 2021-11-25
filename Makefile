@@ -6,7 +6,7 @@
 #    By: csouza-f <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/01/31 16:22:27 by csouza-f          #+#    #+#              #
-#    Updated: 2020/02/03 18:32:02 by csouza-f         ###   ########.fr        #
+#    Updated: 2021/11/24 22:01:16 by caio-proj        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,17 +34,16 @@ BONUS_OBJ = ft_lstnew.o ft_lstadd_front.o ft_lstsize.o ft_lstlast.o \
 	ft_lstadd_back.o ft_lstdelone.o ft_lstclear.o ft_lstiter.o \
 	ft_lstmap.o
 FLAGS = -Wall -Wextra -Werror
-INCLUDES = libft.h
 
 all: $(NAME)
 
 $(NAME):
-	gcc $(FLAGS) -I$(INCLUDES) -c $(SRC)
+	gcc $(FLAGS) -I. -c $(SRC)
 	ar rc $(NAME) $(OBJ)
 	ranlib $(NAME)
 
 bonus:
-	gcc $(FLAGS) -I$(INCLUDES) -c $(BONUS_SRC)
+	gcc $(FLAGS) -I. -c $(BONUS_SRC)
 	ar rc $(NAME) $(BONUS_OBJ)
 	ranlib $(NAME)
 

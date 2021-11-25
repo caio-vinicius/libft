@@ -6,9 +6,11 @@
 /*   By: csouza-f <csouza-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/20 12:47:23 by csouza-f          #+#    #+#             */
-/*   Updated: 2021/11/24 21:12:00 by caio-proj        ###   ########.fr       */
+/*   Updated: 2021/11/24 21:49:03 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlen(const char *s)
 {

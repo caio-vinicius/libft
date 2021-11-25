@@ -6,7 +6,7 @@
 /*   By: csouza-f <csouza-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/28 18:35:04 by csouza-f          #+#    #+#             */
-/*   Updated: 2021/11/24 20:50:12 by caio-proj        ###   ########.fr       */
+/*   Updated: 2021/11/24 21:50:10 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,6 +65,7 @@ static char	**malloc_split(char const *s, char c)
 	split = (char **)malloc((cwords(s, c) + 1) * sizeof(char *));
 	if (!split)
 		return (NULL);
+	return (split);
 }
 
 char	**ft_split(char const *s, char c)
