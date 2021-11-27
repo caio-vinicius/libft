@@ -6,7 +6,7 @@
 /*   By: csouza-f <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/30 18:37:32 by csouza-f          #+#    #+#             */
-/*   Updated: 2021/11/24 21:17:24 by caio-proj        ###   ########.fr       */
+/*   Updated: 2021/11/26 22:33:10 by caio-proj        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,10 @@
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*temp;
-	t_list	*tempnext;
 
 	temp = *lst;
 	while (temp)
 	{
-		tempnext = temp->next;
 		del(temp->content);
 		free(temp);
 		temp = temp->next;
