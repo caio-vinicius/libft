@@ -6,7 +6,7 @@
 /*   By: csouza-f <csouza-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 11:36:04 by csouza-f          #+#    #+#             */
-/*   Updated: 2021/11/26 22:28:42 by caio-proj        ###   ########.fr       */
+/*   Updated: 2021/11/28 15:01:00 by csouza-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,5 +86,6 @@ int					ft_strcountchr(const char *str, char c);
 char				*ft_strdelchr(const char *str, char c);
 char				*ft_itoa_base(unsigned int value, size_t base);
 int					ft_atoi_base(const char *str, int base);
+void	ft_putstr(char *s);
 
 #endif
