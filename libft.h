@@ -6,7 +6,7 @@
 /*   By: csouza-f <csouza-f@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/23 11:36:04 by csouza-f          #+#    #+#             */
-/*   Updated: 2021/11/28 15:01:00 by csouza-f         ###   ########.fr       */
+/*   Updated: 2021/12/18 17:44:27 by csouza-f         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,15 +66,17 @@ void				ft_putnbr_fd(int n, int fd);
 /*
 ** functions bonus
 */
-void	ft_lstadd_back(t_list **lst, t_list *new);
-void	ft_lstadd_front(t_list **lst, t_list *new);
-void	ft_lstclear(t_list **lst, void (*del)(void*));
-void	ft_lstdelone(t_list *lst, void (*del)(void*));
-void	ft_lstiter(t_list *lst, void (*f)(void*));
-t_list	*ft_lstlast(t_list *lst);
-t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
-t_list	*ft_lstnew(void *content);
-int	ft_lstsize(t_list *lst);
+void				ft_lstadd_back(t_list **lst, t_list *new);
+void				ft_lstadd_front(t_list **lst, t_list *new);
+void				ft_lstclear(t_list **lst, void (*del)(void*));
+void				ft_lstdelone(t_list *lst, void (*del)(void*));
+void				ft_lstiter(t_list *lst, void (*f)(void*));
+t_list				*ft_lstlast(t_list *lst);
+t_list				*ft_lstmap(t_list *lst,
+						void *(*f)(void *),
+						void (*del)(void *));
+t_list				*ft_lstnew(void *content);
+int					ft_lstsize(t_list *lst);
 /*
 ** aditional functions
 */
@@ -86,6 +88,6 @@ int					ft_strcountchr(const char *str, char c);
 char				*ft_strdelchr(const char *str, char c);
 char				*ft_itoa_base(unsigned int value, size_t base);
 int					ft_atoi_base(const char *str, int base);
-void	ft_putstr(char *s);
+void				ft_putstr(char *s);
 
 #endif
